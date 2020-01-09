@@ -4,41 +4,42 @@ Hola Mundo!!!
 -->
 <!-- modify this form HTML and place wherever you want your form -->
 
-<form id="my-form"
-  action="https://formspree.io/mwkleplj"
-  method="POST"
->
+<form id="my-form" action="https://formspree.io/mwkleplj" method="POST">
   <fieldset>
   <legend>¡Contacta con los Novios!</legend>
    <div>
      Nombre: <input type="text" name="nombre" />
    </div>
+   
    <div>
-     ¿Vienes acompañado? ¿Cuántos sois?: <input type="text" name="nombre" />
+     ¿Vienes acompañado? ¿Cuántos sois?: <input type="text" name="acompaniantes" />
    </div>
+   
    <div>
     Alergias:
     </div>
     <div>
      <textarea name="alergias" rows="5" cols="40"></textarea>
       </div>
+   
     <div>
      ¿Quieres una cancion? escríbe el titulo y el autor aqui:
      </div>
      <div>
      <input type="text" name="cancion" /> 
      </div>
+   
      <div>
      ¿Algo que comentar? Déjanoslo escrito aqui:
       </div>
       <div>
      <textarea name="comentarios" rows="10" cols="40"></textarea>
       </div>
+   
       <div>
-     <button id="my-form-button">¡Envía la información a los novios!</button>
+     <button id="my-form-button">¡Envía la información a los novios!</button><p id="my-form-status"></p>
        </div>
   </fieldset>
-  <p id="my-form-status"></p>
 </form>
 
 <!-- Place this script at the end of the body tag -->
@@ -57,7 +58,7 @@ Hola Mundo!!!
     function success() {
       form.reset();
       button.style = "display: none ";
-      status.innerHTML = "Thanks!";
+      status.innerHTML = "¡La información ha sido enviada a los Novios!";
     }
 
     function error() {
