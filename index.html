@@ -8,14 +8,15 @@ Hola Mundo!!!
   action="https://formspree.io/mwkleplj"
   method="POST"
 >
-  <label>Nombre:</label>
-  <input type="text" name="nombre" />
-  <label>Alergias:</label>
-  <input type="text" name="alergias" />
-  <label>¿Quieres una cancion? escríbe el titulo y el autor aqui:</label>
-  <input type="text" name="cancion" /> 
-  <textarea name="comentarios" rows="10" cols="40"></textarea>
-  <button id="my-form-button">Submit</button>
+  <fieldset>
+  <legend>¡Contacta con los Novios!</legend>
+     Nombre: <input type="text" name="nombre" />
+     Alergias: <input type="text" name="alergias" />
+     ¿Quieres una cancion? escríbe el titulo y el autor aqui: <input type="text" name="cancion" /> 
+     ¿Algo que comentar? Déjanoslo escrito aqui: 
+     <textarea name="comentarios" rows="10" cols="40"></textarea>
+     <button id="my-form-button">Submit</button>
+  <fieldset>
   <p id="my-form-status"></p>
 </form>
 
